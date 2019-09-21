@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookDetailView" customModule="threeHsCode" customModuleProvider="target">
+            <connections>
+                <outlet property="bookAuthor" destination="Db3-yP-Agw" id="NlO-af-AbX"/>
+                <outlet property="bookAvailability" destination="qoq-y1-uFd" id="UD6-Jc-riL"/>
+                <outlet property="bookPopularity" destination="qoq-y1-uFd" id="F08-j9-zIm"/>
+                <outlet property="bookTitle" destination="o2S-Gk-yxW" id="FOH-5R-WEK"/>
+                <outlet property="imageBook" destination="h7l-tn-0NL" id="Kjo-3V-31Q"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nO1-gg-mEx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h7l-tn-0NL">
+                    <rect key="frame" x="84" y="40" width="207" height="311"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="311" id="J6g-PX-gai"/>
+                        <constraint firstAttribute="width" secondItem="h7l-tn-0NL" secondAttribute="height" multiplier="2:3" id="Qqz-FJ-DK5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2S-Gk-yxW">
+                    <rect key="frame" x="40" y="381" width="295" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db3-yP-Agw">
+                    <rect key="frame" x="50" y="415" width="275" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Src-Ag-awl">
+                    <rect key="frame" x="50" y="465.5" width="275" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoq-y1-uFd">
+                    <rect key="frame" x="50" y="516" width="275" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Db3-yP-Agw" secondAttribute="trailing" constant="50" id="0ub-7d-LJl"/>
+                <constraint firstItem="o2S-Gk-yxW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="923-T5-Qnz"/>
+                <constraint firstItem="Src-Ag-awl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="9Mj-bM-Dfr"/>
+                <constraint firstItem="h7l-tn-0NL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="E04-da-1Rw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="o2S-Gk-yxW" secondAttribute="trailing" constant="40" id="J5P-09-0gE"/>
+                <constraint firstItem="Db3-yP-Agw" firstAttribute="top" secondItem="o2S-Gk-yxW" secondAttribute="bottom" constant="10" id="VMb-B3-RDL"/>
+                <constraint firstItem="o2S-Gk-yxW" firstAttribute="top" secondItem="h7l-tn-0NL" secondAttribute="bottom" constant="30" id="W0g-wT-zga"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Src-Ag-awl" secondAttribute="trailing" constant="50" id="ZU5-7e-9g6"/>
+                <constraint firstItem="qoq-y1-uFd" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ZcU-eH-h3o"/>
+                <constraint firstItem="Db3-yP-Agw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="cf3-RZ-4uL"/>
+                <constraint firstItem="qoq-y1-uFd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="dpI-sA-jEp"/>
+                <constraint firstItem="Src-Ag-awl" firstAttribute="top" secondItem="Db3-yP-Agw" secondAttribute="bottom" constant="30" id="duP-Wt-Esq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qoq-y1-uFd" secondAttribute="trailing" constant="50" id="luy-iZ-HRV"/>
+                <constraint firstItem="Src-Ag-awl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="mVd-aL-R2U"/>
+                <constraint firstItem="h7l-tn-0NL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ma5-ud-QTd"/>
+                <constraint firstItem="qoq-y1-uFd" firstAttribute="top" secondItem="Src-Ag-awl" secondAttribute="bottom" constant="30" id="pAZ-3G-V2C"/>
+                <constraint firstItem="Db3-yP-Agw" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="rOr-e2-Okl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+</document>
